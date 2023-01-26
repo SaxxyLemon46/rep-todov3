@@ -1,1 +1,20 @@
-<p>form works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+
+    <h3>
+        Aggiungi nuovo do todo
+    </h3>
+  <input type="text" placeholder="Nome" formControlName="nome" />
+
+  <h4>Completato?</h4> <input type="checkbox" formControlName="completato"/>
+
+    <br>
+    <br>
+    <br>
+  <button type="submit">Crea</button>
+
+
+
+
+
+</form>

@@ -29,5 +29,16 @@ export class todoService {
   }
 
 
+  
+  addTodo(nuovoTodo: Omit<Todo, 'id'>) {
+    const todo: Todo = {
+      id: this.lastId++,
+      ...nuovoTodo,
+    };
+    this.todos.push(todo);
+
+    }
+
+
 }
   
