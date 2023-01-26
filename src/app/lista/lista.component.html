@@ -1,0 +1,27 @@
+<table>
+    <thead>
+      <h2>ToDohhh</h2>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of todos">
+        <td>
+            {{ t.id }}
+
+        </td>
+        <td>
+            {{ t.nome }}
+        </td>
+        <div *ngIf=" t.completato">
+            
+          ------  F A T T O
+        </div>
+        
+           
+     
+      
+        
+      </tr>
+      
+    </tbody>
+  </table>
+  
